@@ -15,7 +15,7 @@ interface itemDetail {
 }
 
 function display(item : itemDetail) {
-    var startTable = "<table> <tr> <th>Item Name</th> <th>Quantity</th> <th>Unit Price</th> </tr>" ;
+    var startTable = "<table> <tr> <th>Item Name</th> <th>Unit Price</th> <th>Quantity</th> </tr>" ;
     var row1 = "<tr> <td>" + item.itemName1 + "</td><td>" +  item.quantity1 + "</td><td>" + item.unitPrice1 + "</td></tr>" ;
     var row2 = "<tr> <td>" + item.itemName2 + "</td><td>" +  item.quantity2 + "</td><td>" + item.unitPrice2 + "</td></tr>" ;
     var endTable = "</table>";
@@ -24,6 +24,6 @@ function display(item : itemDetail) {
 
 }
 
-let user = new Grocery("Apple", 3, 0.39, "Milk", 1, 2.992);
+let user = new Grocery("Apple", 3, 0.39, "Milk", 1, 2.99);
 
 document.body.innerHTML = display(user);
